@@ -1,0 +1,398 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Source Sans Pro';
+}
+
+img {
+    border-radius: 8px;
+}
+
+.divisor {
+    border: none;
+    border-top: 1px solid rgba(0, 0, 0, 0.116);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.116);
+}
+
+.flex {
+    display: flex;
+}
+
+.grid {
+    display: grid;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.justify-content-sb {
+    justify-content: space-between;
+}
+
+.font-12 {
+    font-size: 12px;
+}
+
+.font-14 {
+    font-size: 14px
+}
+
+.font-16 {
+    font-size: 16px;
+}
+
+.font-18 {
+    font-size: 18px;
+}
+
+.font-20 {
+    font-size: 20px;
+}
+
+.font-24 {
+    font-size: 24px;
+}
+
+.font-32 {
+    font-size: 32px;
+}
+
+.font-w-400 {
+    font-weight: 400;
+}
+
+.font-w-600 {
+    font-weight: 600;
+}
+
+.font-w-800 {
+    font-weight: 800;
+}
+
+.text-preto1 {
+    color: #3E4851
+}
+
+.text-preto2 {
+    color: #030303
+}
+
+.text-preto3 {
+    color: #030303
+}
+
+.text-preto4 {
+    color: #444;
+}
+
+.text-preto5 {
+    color: #8995A0
+}
+
+.text-azul1 {
+    color: #108FF8
+}
+
+.text-amarelo1 {
+    color: #E2AC55
+}
+
+header {
+    padding: 0 50px;
+}
+
+.topo {
+    grid-template-columns: 312px 1fr;
+    grid-row: 74px;
+    padding: 16px 0px;
+}
+
+.topo img {
+    height: 25.19px;
+    padding: 0px 12px;
+}
+
+.topo button {
+    height: 42px;
+    background-color: #FAFCFD;
+    border: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.116);
+    border-left: 1px solid rgba(0, 0, 0, 0.116);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.116);
+    padding: 8px 10px;
+    margin-right: 0;
+    margin-left: 12px;
+}
+
+.topo input {
+    padding: 8px 10px 8px 0px;
+    width: 560px;
+    height: 42px;
+    border: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.116);
+    border-right: 1px solid rgba(0, 0, 0, 0.116);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.116);
+    background-color: #FAFCFD;
+    margin-left: -3px;
+    font: 400 Arial;
+}
+
+nav {
+    grid-template-columns: 980px 1fr;
+    padding: 12px 0;
+    justify-content: space-between;
+}
+
+nav a {
+    color: #3E4851;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+nav li {
+    padding: 0 16px;
+}
+
+.navMin {
+    display: none;
+}
+
+.teste-velocidade {
+    padding-left: 110px;
+}
+
+main {
+    padding: 0 50px;
+}
+
+.area1 {
+    grid-template: "p n1" 118px "p n2" 118px "t n3" 118px / 728px 1fr;
+    grid-gap: 16px;
+    padding: 20px 0 0 0;
+}
+
+.principal {
+    margin: 0 4px 0 12px;
+}
+
+.titulo_principal {
+    grid-area: t;
+    margin-top: 32px;
+}
+
+.img_principal {
+    grid-area: p;
+}
+
+.noticiasCentro {
+    display: flex;
+}
+
+.noticias-lat {
+    margin: 0 12px 0 4px;
+    grid-template-columns: 164px 1fr;
+}
+
+.noticia-lateral {
+    margin: 0 0 0 24px;
+}
+
+.n1 {
+    grid-area: n1;
+}
+
+.n2 {
+    grid-area: n2;
+}
+
+.n3 {
+    grid-area: n3;
+}
+
+.paginacao {
+    grid-template-columns: 1fr 104px;
+    grid-gap: 15px;
+    padding: 20px 0 0 0;
+}
+
+.paginacao button {
+    border-radius: 100%;
+    height: 28px;
+    width: 28px;
+    background-color: #FAFCFD;
+    border: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.116);
+    border-left: 1px solid rgba(0, 0, 0, 0.116);
+    font-size: 12px;
+    font-weight: 600;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.116);
+    color: #23282D
+}
+
+.menuConteudo {
+    grid-template-columns: 1fr 416px;
+    grid-gap: 24px;
+    margin: 0 0 16px
+    
+}
+
+.btnBranco {
+    padding: 5px 16px;
+    margin: 0 0 0 16px;
+    border: none;
+    background-color: #ffffff;
+}
+
+.btnCinza {
+    padding: 5px 16px;
+    margin: 0 0 0 16px;
+    border: none;
+    background-color: #F1F5F8;
+}
+
+.maisLidas {
+    flex: 1;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 24px;
+    margin: 24px 0;
+    margin-right: 12px;
+}
+
+.lateral {
+    margin-left: 12px;
+    flex-basis: 416px;
+}
+
+.maisLidas img {
+    margin-right: 24px;
+}
+
+.noticias_laterais {
+    padding: 16px 0;
+}
+
+.ultimasNoticias {
+    display: flex;
+    margin: 24px 0;
+}
+
+.recentes {
+    flex: 1;
+}
+
+.recentes-noticia {
+    margin-top: 18px;
+}
+
+.reviews {
+    flex-basis: 416px;
+}
+
+.ultimasNoticias img {
+    margin-right: 24px;
+}
+
+
+
+@media (max-width: 640px) {
+    main {
+        padding: 0 30px;
+    }
+    .nav {
+        display: none;
+    }
+    .menuConteudo {
+        display: none;
+    }
+    .not {
+        flex-direction: row-reverse;
+    }
+    .principal {
+        margin: 0;
+    }
+    .noticiasCentro {
+        display: block;
+    }
+    .noticias-lat {
+        display: none;
+    }
+    .paginacao {
+        display: none;
+    }
+    .area1 {
+        grid-template: unset;
+        grid-template-columns: 1fr;
+        padding: 2px 0 0 0;
+        margin-bottom: 39px;
+    }
+    .area1 img {
+        width: 100%;
+    }
+    .titulo_principal {
+        margin-top: 1px;
+        grid-area: unset;
+    }
+    .titulo_principal h2 {
+        font-size: 18px;
+    }
+    .titulo_principal h3 {
+        display: none;
+    }
+    .maisLidas {
+        flex: 1;
+        grid-template-columns: 1fr;
+        flex: 1;
+        grid-gap: 24px;
+        margin: 24px 0;
+    }
+    .maisLidas img {
+        width: 30%;
+        margin: 0;
+        margin-left: 9px;
+    }
+    .maisLidas h4 {
+        font-size: 17px;
+    }
+    .maisLidas p {
+        font-size: 13px;
+    }
+    .navMin {
+        display: flex;
+        padding: 12px 25px;
+        align-items: center;
+        justify-content: space-between;
+        
+    }
+    .navMin img {
+        width: 55%;
+    }
+    .ultimasNoticias {
+        display: block;
+        margin: 24px 0;
+    }
+    .ultimasNoticias .recentes h1 {
+        font-size: 18px;
+    }
+    .ultimasNoticias img {
+        width: 35%;
+        margin: 0;
+        margin-left: 18px;
+    }
+    .noticias_laterais img {
+        width: 33%;
+    }
+    .lateral {
+        margin: 0;
+    }
+    .reviews {
+        margin-top: 24px;
+    }
+}
